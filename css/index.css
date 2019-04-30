@@ -1,3 +1,365 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+@media (max-width: 600px) {
+nav {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column-reverse;
+  margin-top: 25px;
+}
+nav a {
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20.5px;
+    border-bottom: 1px solid black;
+    padding: 22px 0;
+}
+nav a:first-child {
+    border-top: 1px solid black;
+}
+section.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 22px 0;
+}
+
+header {
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+header .header-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+    font-size: 450%;
+}
+.rnd-img {
+    display: none;
+
+}
+.button {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    width: 40%;
+    margin: 10px;
+}
+
+.features-about-content {
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.features-about-content div {
+  margin: 20px;
+}
+.features-about-content div:first-child {
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+
+.middle-img {
+    width: 100%;
+}
+.bottomContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.bottomContent div {
+  padding: 20px;
+
+}
+.bottom {
+  display: flex;
+  flex-direction:column;
+  border-top: 1px solid black;
+  padding: 20px;
+}
+.address {
+  padding-bottom: 20px;
+}
+.phone {
+  padding-bottom: 20px;
+}
+.email {
+  padding-bottom: 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+}
+
+@media (min-width: 600px) {
+    body {
+        margin: 5%;
+    }
+    body {
+        margin: 5%;
+    }
+    nav {
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: column-reverse;
+    }
+    nav a {
+        color: grey;
+        margin: 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    header {
+      display: block;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom:1px solid black;
+      padding: 30px;
+    }
+    header .header-txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+        font-size: 400%;
+    }
+    .rnd-img {
+        display: none;
+    
+    }
+    .button {
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+        width: 30%;
+    }
+    
+    .features-about-content {
+        display: flex;
+      justify-content: space-between;
+      align-items: center;
+        padding: 30px 0;
+    }
+    
+    .features-about-content div {
+      width: 48%;
+    }
+    
+    .middle-img {
+        width: 100%;
+    }
+    .bottomContent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+        padding: 30px 0;
+      width: 100%;
+    }
+    
+    .bottomContent div {
+      width: 30%;
+    }
+    .bottom {
+      display: flex;
+      flex-direction:column;
+        border-top: 1px solid black;
+      padding-top: 20px;
+    }
+    .address {
+      padding-bottom: 20px;
+    }
+    .phone {
+      padding-bottom: 20px;
+    }
+    .email {
+      padding-bottom: 20px;
+    }
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+    }
+    
+}
+
+
+@media (min-width: 800px) {
+    body {
+        margin: 5%;
+    }
+    nav {
+      display:flex;
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    nav a {
+        color: grey;
+        margin: 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom:1px solid black;
+    }
+    header .header-txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h1 {
+        font-size: 400%;
+    }
+    .rnd-img {
+        padding: 10% 0;
+        display: initial;
+    
+    }
+    .button {
+        border: 1px solid black;
+      text-align: center;
+        padding: 5px;
+        width: 55%;
+    }
+    
+    .features-about-content {
+        display: flex;
+      justify-content: space-between;
+      align-items: center;
+        padding: 30px 0;
+        width: 100%;
+    }
+    
+    .features-about-content div {
+      width: 48%;
+    }
+    
+    .middle-img {
+        width: 100%;
+    }
+    .bottomContent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+      width: 100%;
+    }
+    
+    .bottomContent div {
+      width: 30%;
+    }
+    .bottom {
+      display: flex;
+      flex-direction:column;
+        border-top: 1px solid black;
+      padding-top: 20px;
+    }
+    .address {
+      padding-bottom: 20px;
+    }
+    .phone {
+      padding-bottom: 20px;
+    }
+    .email {
+      padding-bottom: 20px;
+    }
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+    }
+    
+}
